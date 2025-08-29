@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Meal() {
-    async function fetchMeals() {
-        const response = await fetch("http://localhost:3000/meals")
-        if (!response.ok) {
-            //..
+    const [mealData, setMealData] = useState([])
+    useEffect(() => {
+        async function fetchMeals() {
+            const response = await fetch("http://localhost:3000/meals")
+            if (!response.ok) {
+                //..
+            }
+            const mealItem = response.json();
+            setMealData(mealItem)
         }
-    }
-
+        fetchMeals()
+    }, [])
     return (
-        <ul></ul>
+        <ul>p</ul>
     )
 }
 
