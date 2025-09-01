@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import MealItem from './MealItem.jsx';
 
 function Meal() {
     const [mealData, setMealData] = useState([])
@@ -8,13 +9,16 @@ function Meal() {
             if (!response.ok) {
                 //..
             }
-            const mealItem = response.json();
+            const mealItem = await response.json();
             setMealData(mealItem)
         }
         fetchMeals()
     }, [])
     return (
-        <ul>p</ul>
+        <ul>{mealData.map((meal) =>
+            (<MealItem key={meal.id} meal={meal} />))}
+
+        </ul>
     )
 }
 
