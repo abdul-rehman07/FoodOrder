@@ -15,7 +15,7 @@ function Meal() {
         fetchMeals()
     }, [])
     return (
-        <ul>{mealData.map((meal) =>
+        <ul id='meals'>{mealData.map((meal) =>
             (<MealItem key={meal.id} meal={meal} />))}
 
         </ul>

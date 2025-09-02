@@ -47,3 +47,58 @@ h1 {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
+
+.meal-item {
+  list-style: none;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  padding-top: 2rem;
+}
+#meals {
+  list-style: none;
+  padding: 2rem;
+  width: 90%;
+  max-width: 70rem;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+}
+
+.meal-item {
+  text-align: center;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: black;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.meal-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.meal-item .meal-box img {
+  height: 20rem;
+  width: cover;
+  overflow: hidden;
+}
+
+.meal-item-price {
+  color: yellow;
+  font-weight: bold;
+}
+.meal-item-desc {
+  margin: 1rem;
+}
+.meal-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+.meal-item-action {
+  margin: 1rem;
+}
