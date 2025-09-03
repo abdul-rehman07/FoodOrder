@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.jpg";
+import Button from "./Button.jsx";
 
 function Header() {
     return (
@@ -10,7 +11,7 @@ function Header() {
             </div>
             <div>
                 <nav>
-                    <button>Cart(0)</button>
+                    <Button textonly >Cart(0)</Button>
                 </nav>
             </div>
         </header>

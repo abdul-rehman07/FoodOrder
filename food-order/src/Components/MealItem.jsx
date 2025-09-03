@@ -1,5 +1,6 @@
 import React from 'react'
 import { CurrencyConvert } from './Currencyconvert'
+import Button from './Button.jsx'
 function MealItem({ meal }) {
     return (
         <li className='meal-item'>
@@ -14,7 +15,7 @@ function MealItem({ meal }) {
 
                 </div>
                 <div><p className='meal-item-action'>
-                    <button>Add to Cart</button></p></div>
+                    <Button>Add to Cart</Button></p></div>
             </article>
         </li>
     )

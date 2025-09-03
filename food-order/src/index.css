@@ -71,7 +71,7 @@ h1 {
   overflow: hidden;
   border-radius: 1rem;
   background-color: black;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 6px rgba(45, 45, 45, 0.5);
 }
 
 .meal-box {
@@ -101,4 +101,16 @@ h1 {
 }
 .meal-item-action {
   margin: 1rem;
+}
+
+.css {
+  color: rgb(255, 0, 0);
+  border-color: rgb(0, 162, 255);
+  border-radius: 8px;
+}
+
+.textcss {
+  color: blue;
+  border: none;
+  border-radius: 8px;
 }
